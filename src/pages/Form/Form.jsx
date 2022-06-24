@@ -4,7 +4,7 @@ function Form() {
   return (
     <>
       <form id="form" method="POST" className="form">
-        <h2 className="form__subheader">Form</h2>
+        <h2 className="form__subheader">How we can help you?</h2>
         <div className="form__section">
           <div className="form__section--box">
             <label htmlFor="name" className="form__label">
