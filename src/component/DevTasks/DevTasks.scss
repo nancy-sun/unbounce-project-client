@@ -1,0 +1,93 @@
+@use "../../styles/partials/_reset.scss" as *;
+@use "../../styles/partials/_typography.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+@import "~bootstrap/scss/bootstrap";
+
+p {
+    margin-bottom: 0;
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #D9D9D9;
+        border-radius: 10px;
+        padding: 0.5rem;
+
+    }
+
+    &__title {
+        font-family: $title-typeface;
+        margin-bottom: 2rem;
+    }
+
+    &__board {
+        min-width: 250px;
+        min-height: 500px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+.card {
+    padding: 8px;
+    min-height: 50px;
+    color: black;
+    box-shadow: 1px 3px grey;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+
+    &--top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &--bottom {
+        @extend .card--top;
+    }
+
+    &__content {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    &__date {
+        font-size: 14px;
+    }
+
+    &__ticket {
+        font-size: 16px;
+    }
+
+    &__tag {
+        background-color: $color-red;
+        font-size: 16px;
+        padding: 0 1rem;
+        border-radius: 10px;
+    }
+}
+
+.customDrop {
+    width: 60px;
+    text-overflow: "";
+    border: none;
+    background-color: white;
+    // font-size: 50px;
+
+    &::after {
+        border-top: none;
+    }
+}

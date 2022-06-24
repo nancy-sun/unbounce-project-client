@@ -1,0 +1,83 @@
+@use "../../styles/partials/_reset.scss" as *;
+@use "../../styles/partials/_typography.scss" as *;
+@use "../../styles/partials/_mixins.scss" as *;
+
+.logo {
+    filter: brightness(0) saturate(0);
+    height: 1.5rem;
+}
+
+.devNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+    &__search {
+        border: none;
+        width: 15rem;
+        padding: 0.2rem 1rem;
+    }
+
+    &__search-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__team {
+        display: flex;
+    }
+
+    &__member {
+        background-color: red;
+        border: 1px white solid;
+        border-radius: 50px;
+        width: 35px;
+        height: 35px;
+        z-index: 6;
+
+        &:nth-child(2) {
+            position: relative;
+            right: 13px;
+            z-index: 5;
+        }
+
+        &:nth-child(3) {
+            position: relative;
+            right: 26px;
+            z-index: 4;
+        }
+
+        &:nth-child(4) {
+            position: relative;
+            right: 33px;
+            z-index: 3;
+            background-color: grey;
+            color: white;
+            font-weight: 800;
+            font-size: 1em;
+            text-align: center;
+            line-height: 35px;
+        }
+    }
+
+    &__self {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+
+        &--name {
+            font-family: $title-typeface;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        &--avatar {
+            background-color: red;
+            border: 1px white solid;
+            border-radius: 50px;
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
