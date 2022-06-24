@@ -59,6 +59,11 @@
     background-color: #fff;
     color: #e76969;
 
+    &:hover {
+      background-color: #e95f5f;
+      color: #fff;
+    }
+
     &--box {
       width: 100%;
       display: flex;

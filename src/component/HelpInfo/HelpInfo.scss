@@ -62,6 +62,10 @@
     border: 1px solid #e95f5f;
     background-color: #fff;
     color: #e95f5f;
+    &:hover {
+      background-color: #e95f5f;
+      color: #fff;
+    }
 
     &--box {
       width: 100%;
