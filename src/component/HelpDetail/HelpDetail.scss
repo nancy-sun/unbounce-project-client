@@ -18,19 +18,34 @@
   }
 
   &__heading {
-    color: #333;
+    color: #000;
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 2rem;
+
+    &--3 {
+      color: #000;
+      font-weight: 600;
+      font-size: 2rem;
+      padding: 2rem;
+    }
   }
 
   &__dropdown {
     padding: 0.5rem 2rem;
-    border: 1px solid #ffa2a0;
+    border: 1px solid #6aa965;
+    background-color: #a4eacc;
+
+    &--wrap {
+      padding: 1.5rem;
+    }
   }
 
   &__btn {
     padding: 0.5rem 2rem;
-    border: 1px solid #ffa2a0;
+    border: 1px solid #e95f5f;
     background-color: #fff;
-    color: #ffa2a0;
+    color: #e95f5f;
 
     &--box {
       width: 100%;
@@ -50,8 +65,9 @@
 }
 
 #dropdown-form-button {
-  background-color: #fff;
+  background-color: #a4eacc;
+  color: #000;
 }
 .dropdown .dropdown-item:hover {
-  background-color: #ffa2a0;
+  background-color: #a4eacc;
 }

@@ -15,21 +15,46 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    width: 100%;
   }
 
   &__heading {
-    color: #333;
+    color: #000;
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 2rem;
+
+    &--2 {
+      font-size: 1.8rem;
+      color: #000;
+      font-weight: 600;
+      margin: 0;
+      padding-bottom: 1rem;
+    }
+
+    &--box {
+      width: 100%;
+      padding: 1.5rem;
+      text-align: left;
+    }
+  }
+
+  &__form {
+    &--wrap {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
   }
 
   &__dropdown {
     padding: 0.5rem 2rem;
-    border: 1px solid #ffa2a0;
+    border: 1px solid #6aa965;
   }
   &__btn {
     padding: 0.5rem 2rem;
-    border: 1px solid #ffa2a0;
+    border: 1px solid #e76969;
     background-color: #fff;
-    color: #ffa2a0;
+    color: #e76969;
 
     &--box {
       width: 100%;

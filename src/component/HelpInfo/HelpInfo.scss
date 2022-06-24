@@ -18,7 +18,18 @@
   }
 
   &__heading {
-    color: #333;
+    color: #000;
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 2rem;
+
+    &--2 {
+      font-size: 1.8rem;
+      color: #000;
+      font-weight: 600;
+      margin: 0;
+      padding-bottom: 1rem;
+    }
   }
 
   &__form {
@@ -34,16 +45,16 @@
       text-transform: uppercase;
     }
     &--input {
-      border: 1px solid #ffa2a0;
+      border: 1px solid #e95f5f;
       padding: 0.3rem 1rem 0.3rem 0.2rem;
     }
   }
 
   &__btn {
     padding: 0.5rem 2rem;
-    border: 1px solid #ffa2a0;
+    border: 1px solid #e95f5f;
     background-color: #fff;
-    color: #ffa2a0;
+    color: #e95f5f;
 
     &--box {
       width: 100%;
