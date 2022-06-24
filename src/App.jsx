@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Dev from "./pages/Dev/Dev";
-import './App.scss';
+import Form from "./pages/Form/Form";
+
+import "./App.scss";
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       <Switch>
         {/* <Route path="/" exact component={ } /> */}
         <Route path="/dev" exact component={Dev} />
+        <Route path="/form" exact component={Form} />
       </Switch>
     </BrowserRouter>
   );
