@@ -12,19 +12,19 @@ function HelpDegree() {
       <section className=" help-degree">
         <div className="help-degree__wrap">
           <h1 className=" help-degree__heading">How can we help you?</h1>
-          <div className="help__heading--box">
-            <h2 className=" help__heading--2 ">
+          <div className="help-degree__heading--box">
+            <h2 className=" help-degree__heading--2 ">
               1. Let us know why you’re here!
             </h2>
           </div>
           <div className="help-degree__form--wrap">
             <div className="help-degree__form--box">
-              <h2 className=" help__heading--2">
+              <h2 className=" help-degree__heading--3">
                 You are reaching out to us because...
               </h2>
               <DropdownButton
-                id="dropdown-basic-button"
-                bsPrefix="customDrop"
+                id="dropdown-form-button"
+                bsPrefix="customFormDrop"
                 title="You are expriencing a technical issue"
                 className="help-degree__dropdown"
               >

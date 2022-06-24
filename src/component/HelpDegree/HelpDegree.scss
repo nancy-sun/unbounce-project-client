@@ -29,6 +29,14 @@
       color: #000;
       font-weight: 600;
       margin: 0;
+      padding: 3rem;
+    }
+
+    &--3 {
+      font-size: 1.8rem;
+      color: #000;
+      font-weight: 600;
+      margin: 0;
       padding-bottom: 1rem;
     }
 
@@ -61,5 +69,11 @@
       display: flex;
       justify-content: flex-end;
     }
+  }
+}
+
+.customFormDrop {
+  &::after {
+    display: none;
   }
 }

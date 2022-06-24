@@ -35,18 +35,25 @@
   &__form {
     display: flex;
     flex-direction: column;
+
     &--box {
       width: 100%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
+      padding: 3rem;
     }
     &--lable {
       text-transform: uppercase;
+      color: #000;
     }
     &--input {
-      border: 1px solid #e95f5f;
+      border: 1px solid #6aa965;
       padding: 0.3rem 1rem 0.3rem 0.2rem;
+
+      &::placeholder {
+        color: #000;
+      }
     }
   }
 
