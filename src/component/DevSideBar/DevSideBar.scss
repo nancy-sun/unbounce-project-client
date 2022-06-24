@@ -1,8 +1,15 @@
-@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/_mixins.scss" as *;
 
 button {
     border: none;
     cursor: pointer;
+    background-color: transparent;
+
+    &:hover {
+        // background-color: $color-yellow;
+    }
+
+
 }
 
 .devSideBar {
@@ -14,4 +21,46 @@ button {
         gap: 2rem;
         padding: 1rem 1rem 0 0;
     }
+
+
+
+}
+
+
+#sideBtn1 {
+    background-image: url("../../assets/funnelsort.svg");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: -1px 3px;
+    padding-left: 1.7rem;
+    text-transform: uppercase;
+
+    &:hover {
+        font-weight: 800;
+    }
+}
+
+#sideBtn2 {
+    @extend #sideBtn1;
+    background-image: url("../../assets/slideset.svg");
+}
+
+#sideBtn3 {
+    @extend #sideBtn1;
+    background-image: url("../../assets/chartanalytics.svg");
+}
+
+#sideBtn4 {
+    @extend #sideBtn1;
+    background-image: url("../../assets/flagBanner.svg");
+}
+
+#sideBtn5 {
+    @extend #sideBtn1;
+    background-image: url("../../assets/archiveTray.svg");
+}
+
+#sideBtn6 {
+    @extend #sideBtn1;
+    background-image: url("../../assets/trash.svg");
 }

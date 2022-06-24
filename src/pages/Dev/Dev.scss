@@ -4,9 +4,14 @@
 
 main {
     display: flex;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #F6F4F4;
 }
 
 .page {
-    background-color: #F6F4F4;
+    background-color: white;
     padding: 1rem;
+    width: 100vw;
 }
