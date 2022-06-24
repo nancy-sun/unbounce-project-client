@@ -4,11 +4,12 @@ import "./DevSideBar.scss";
 function DevSideBar() {
     return (
         <div className="devSideBar">
-            <button>sort</button>
-            <button>setting</button>
-            <button>analytics</button>
-            <button>flagged</button>
-            <button>trash</button>
+            <button id='sideBtn1'>sort</button>
+            <button id='sideBtn2'>setting</button>
+            <button id='sideBtn3'>analytics</button>
+            <button id='sideBtn4'>flagged</button>
+            <button id='sideBtn5'>archived</button>
+            <button id='sideBtn6'>trash</button>
         </div>
     )
 }
