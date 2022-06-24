@@ -1,0 +1,37 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+@import '../../styles/partials/reset';
+@import '../../styles/partials/typography';
+
+.tasks {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: $title-typeface;
+    }
+
+    &__board {
+        padding: 4px;
+        width: 250px;
+        min-height: 500px;
+
+        &-wrap {
+            margin: 8px;
+        }
+    }
+
+    &__task {
+        padding: 16px;
+        margin: 0 0 8px 0;
+        min-height: 50px;
+        color: black;
+    }
+}
