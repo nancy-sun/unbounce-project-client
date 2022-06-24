@@ -1,0 +1,39 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.header {
+  padding: 1.5rem;
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img {
+    width: 200px;
+    height: auto;
+    filter: brightness(0) saturate(100);
+  }
+
+  &__list {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__btn {
+    &--1 {
+      border: 1px solid #0033ff;
+      background-color: #fff;
+      color: #0033ff;
+      padding: 0.2rem 0.5rem;
+    }
+    &--2 {
+      background-color: #0033ff;
+      color: #fff;
+      padding: 0.2rem 0.5rem;
+    }
+  }
+}

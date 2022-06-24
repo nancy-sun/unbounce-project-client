@@ -1,0 +1,72 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.help-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__wrap {
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__heading {
+    color: #000;
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 2rem;
+
+    &--3 {
+      color: #000;
+      font-weight: 600;
+      font-size: 2rem;
+      padding: 2rem;
+    }
+  }
+
+  &__dropdown {
+    padding: 0.5rem 2rem;
+    border: 1px solid #6aa965;
+
+    &--wrap {
+      padding: 1.5rem;
+    }
+  }
+
+  &__btn {
+    padding: 0.5rem 2rem;
+    border: 1px solid #e95f5f;
+    background-color: #fff;
+    color: #e95f5f;
+
+    &--box {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.customFromDrop {
+  text-overflow: "";
+  border: none;
+
+  &::after {
+    border-top: none;
+  }
+}
+
+#dropdown-form-button {
+  background-color: #fff;
+  color: #000;
+}
+.dropdown .dropdown-item:hover {
+  background-color: #a4eacc;
+}
