@@ -55,7 +55,7 @@ const onDragEnd = (result, columns, setColumns) => {
     }
 };
 
-function App() {
+function Dev() {
     const [columns, setColumns] = useState(allColumns);
     return (
         <div className="tasks">
@@ -105,4 +105,4 @@ function App() {
     );
 }
 
-export default App;
+export default Dev;
