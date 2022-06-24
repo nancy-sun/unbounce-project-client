@@ -4,55 +4,128 @@
 
 .logo {
     filter: brightness(0) saturate(0);
-    height: 1.5rem;
+    height: 4rem;
 }
 
 .devNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem;
     flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.7rem;
+
+    &--top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &--bottom {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
 
 
     &__search {
         border: none;
-        width: 15rem;
+        width: 20rem;
         padding: 0.2rem 1rem;
+        border-radius: 10px;
+        background-color: #D9D9D9;
+        background-image: url("../../assets/magnifyingGlass.svg");
+        background-repeat: no-repeat;
+        background-size: 1.3rem;
+        background-position: 96%;
+        border-radius: 10px;
+        border: 1px solid black;
+        height: 30px;
+        padding-left: 1rem;
+        box-shadow: 0 2px #D9D9D9;
+
+        &::placeholder {
+            color: #555151;
+        }
     }
 
     &__search-wrap {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     &__team {
         display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &__name {
+            font-weight: 600;
+        }
+    }
+
+    &__stat {
+        width: 20rem;
+        background-color: #D9D9D9;
+        border-radius: 10px;
+        border: 1px solid black;
+        height: 40px;
+        padding-left: 1rem;
+        position: relative;
+        left: 40px;
+        box-shadow: 0 2px #D9D9D9;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &p {
+            font-family: $title-typeface;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        & span {
+            font-family: $title-typeface;
+            font-weight: 800;
+            font-size: 1.2rem;
+        }
     }
 
     &__member {
-        background-color: red;
+        background-color: green;
         border: 1px white solid;
         border-radius: 50px;
         min-width: 35px;
         height: 35px;
-        z-index: 6;
+        cursor: pointer;
 
         &:nth-child(2) {
             position: relative;
-            right: 13px;
-            z-index: 5;
+            z-index: 6;
+            left: 60px;
+            background-image: url("../../assets/employeeAvatar.png");
+            background-size: 130%;
+            background-position: 1px -4px;
+            border: 1px white solid;
+            border-radius: 50px;
+            min-width: 35px;
+            height: 35px;
         }
 
         &:nth-child(3) {
             position: relative;
-            right: 26px;
+            left: 27px;
             z-index: 4;
+            background-image: url("../../assets/teamAva.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 40%;
         }
 
         &:nth-child(4) {
             position: relative;
-            right: 33px;
             z-index: 3;
             background-color: grey;
             color: white;
@@ -72,10 +145,13 @@
             font-family: $title-typeface;
             font-size: 1rem;
             font-weight: 700;
+            color: black;
         }
 
         &--avatar {
-            background-color: red;
+            background-image: url("../../assets/employeeAvatar.png");
+            background-size: 130%;
+            background-position: 1px -4px;
             border: 1px white solid;
             border-radius: 50px;
             min-width: 35px;

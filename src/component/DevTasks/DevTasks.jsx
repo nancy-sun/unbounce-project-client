@@ -3,27 +3,25 @@ import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { v4 as uuid } from 'uuid';
 import DropDownBtn from '../DropDownBtn/DropDownBtn';
 import "./DevTasks.scss";
+import 'animate.css';
+
 
 
 const allTasks = [
-    { id: uuid(), content: "task1", issue: "issue1", date: "June 23" },
-    { id: uuid(), content: "task2", issue: "issue2", date: "June 24" },
-    { id: uuid(), content: "task3", issue: "issue1", date: "June 21" },
-    { id: uuid(), content: "task4", issue: "issue1", date: "June 19" },
-    { id: uuid(), content: "task5", issue: "issue1", date: "June 20" }
+    { id: uuid(), content: "Can’t find tutorial videos", issue: "Onboarding", issueColor: "#E9C016", date: "June 23" },
+    { id: uuid(), content: "Analytics feedback does not work ", issue: "Technical issue", issueColor: "#63DDAB", date: "June 24" },
+    { id: uuid(), content: "Payment issue", issue: "Accounts", issueColor: "#012EE2", date: "June 21" },
+    { id: uuid(), content: "Inquiry about Pricing Models", issue: "Accounts", issueColor: "#012EE2", date: "June 19" },
+    { id: uuid(), content: "Question about features", issue: "General", issueColor: "#EF9C9A", date: "June 20" }
 ];
 
 const allColumns = {
     [uuid()]: {
-        name: "unassigned",
+        name: "to do",
         items: allTasks
     },
     [uuid()]: {
-        name: "to do",
-        items: []
-    },
-    [uuid()]: {
-        name: "wip",
+        name: "in progress",
         items: []
     },
     [uuid()]: {
@@ -56,6 +54,7 @@ const onDragEnd = (result, columns, setColumns) => {
     }
 };
 
+
 function DevTasks() {
     const [columns, setColumns] = useState(allColumns);
     return (
@@ -71,23 +70,21 @@ function DevTasks() {
                                         {(provided, snapshot) => {
                                             return (
                                                 <div className='tasks__board' {...provided.droppableProps} ref={provided.innerRef}
-                                                    style={{ background: snapshot.isDraggingOver ? "grey" : "#D9D9D9" }}>
+                                                    style={{ background: snapshot.isDraggingOver ? "grey" : "#303030" }}>
                                                     {column.items.map((item, index) => {
                                                         return (
                                                             <Draggable key={item.id} draggableId={item.id} index={index} >
                                                                 {(provided, snapshot) => {
                                                                     return (
-                                                                        <div className="card"
+                                                                        <div
+                                                                            className="card"
+
                                                                             ref={provided.innerRef}
                                                                             {...provided.draggableProps}
                                                                             {...provided.dragHandleProps}
-                                                                            style={{
-                                                                                backgroundColor: snapshot.isDragging ? "olive" : "white",
-                                                                                ...provided.draggableProps.style
-                                                                            }}
                                                                         >
                                                                             <div className='card--top'>
-                                                                                <div className='card__tag'>{item.issue}</div>
+                                                                                <div className='card__tag' style={{ backgroundColor: `${item.issueColor}` }}>{item.issue}</div>
                                                                                 <div className='card__date'>{item.date}</div>
                                                                             </div>
                                                                             <p className='card__content'>{item.content}</p>
@@ -110,8 +107,8 @@ function DevTasks() {
                             </div>
                         );
                     })}
-                </DragDropContext>
-            </div>
+                </DragDropContext >
+            </div >
         </>
     );
 }

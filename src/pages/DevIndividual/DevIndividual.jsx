@@ -7,13 +7,13 @@ import DevSideBar from '../../component/DevSideBar/DevSideBar';
 
 function DevIndividual() {
     return (
-        <>
+        <div className="page">
             <DevNav />
             <main>
                 <DevSideBar />
                 <DevIndividualTasks />
             </main>
-        </>
+        </div>
     )
 }
 
