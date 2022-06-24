@@ -27,8 +27,12 @@
   &__btn {
     padding: 0.5rem 2rem;
     border: 1px solid #e95f5f;
-    background-color: #fff;
+    background-color: #ffffff;
     color: #e95f5f;
+    &:hover {
+      background-color: #e95f5f;
+      color: #fff;
+    }
 
     &--box {
       width: 100%;
