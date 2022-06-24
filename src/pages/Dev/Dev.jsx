@@ -10,13 +10,13 @@ function Dev() {
 
 
     return (
-        <body>
+        <div className="page">
             <DevNav />
             <main>
                 <DevSideBar />
                 <DevTasks />
             </main>
-        </body>
+        </div>
     )
 }
 
