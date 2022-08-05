@@ -1,8 +1,15 @@
 # Industry hackathon project with unbounce
 
-https://unbounce.com/ is a local landing page builder in Vancouver.  
+https://unbounce.com/ is a Vancouver-bsed landing page builder.  
  
-This is a 1-day hackathon project. We worked with the UX team to come up with a solution to attain high customer loyalty as Unbounce introduces new products and makes changes to features. Won first place 🎉 with amazing teamwork and collaboration!
+This is a 1-day hackathon project. We worked with the UX team to come up with a solution to attain high customer loyalty as Unbounce introduces new products and makes changes to features. Won first place 🎉 with amazing teamwork and collaboration! 
+
+We built a site for the support team to manage all support tickets, and a site for customers to submit a ticket.  
+
+
+**Deployed client site:** https://spiffy-croissant-04a5eb.netlify.app/help
+
+**Deployed support team site:** https://spiffy-croissant-04a5eb.netlify.app/dev  
 
 ## Installation
 
