@@ -89,7 +89,7 @@ function DevTasks() {
                                                                             </div>
                                                                             <p className='card__content'>{item.content}</p>
                                                                             <div className='card--bottom'>
-                                                                                <p className='card__ticket'>#{item.id.slice(0, 5)}</p>
+                                                                                <p id='card__ticket' className='card__ticket'>#{item.id.slice(0, 5)}</p>
                                                                                 <DropDownBtn />
                                                                             </div>
                                                                         </div>

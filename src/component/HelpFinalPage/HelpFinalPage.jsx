@@ -19,7 +19,7 @@ function HelpFinalPage() {
           </p>
 
           <div className="help-final__btn--box">
-            <Link to={"/"}>
+            <Link to={"/help"}>
               <button className="help-final__btn">Return Homepage</button>
             </Link>
           </div>

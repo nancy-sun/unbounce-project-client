@@ -68,6 +68,15 @@ p {
 
     &--bottom {
         @extend .card--top;
+
+        &>.dropdown {
+            border-radius: 10px;
+            height: 1.6rem;
+        }
+
+        &>.dropdown .dropdown-item:hover {
+            background-color: rgba(128, 128, 128, 0.2)
+        }
     }
 
     &__content {
@@ -81,9 +90,6 @@ p {
         font-size: 14px;
     }
 
-    &__ticket {
-        font-size: 16px;
-    }
 
     &__tag {
         background-color: $color-red;
@@ -92,6 +98,11 @@ p {
         padding: 0 1rem;
         border-radius: 10px;
     }
+}
+
+#card__ticket {
+    font-size: 16px;
+    padding-bottom: 0;
 }
 
 .customDrop {
@@ -113,10 +124,8 @@ p {
     }
 }
 
-.dropdown {
-    border-radius: 10px;
-}
 
-.dropdown .dropdown-item:hover {
-    background-color: rgba(128, 128, 128, 0.2)
-}
+
+// .dropdown .dropdown-item:hover {
+//     background-color: rgba(128, 128, 128, 0.2)
+// }

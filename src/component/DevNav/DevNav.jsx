@@ -21,7 +21,7 @@ function DevNav() {
             </div>
             <div className="devNav--bottom">
                 <div className="devNav__team">
-                    <p className="devNav__team__name">TEAM 2A</p>
+                    <p className="devNav__team-name">TEAM 2A</p>
                     <div className="devNav__member"></div>
                     <div className="devNav__member"></div>
                     <div className="devNav__member">+3</div>
